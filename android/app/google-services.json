@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1026152061623",
+    "project_id": "pharmap-6b3db",
+    "storage_bucket": "pharmap-6b3db.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1026152061623:android:d43af5ab04e4b7b1aacb32",
+        "android_client_info": {
+          "package_name": "com.example.kareem_qandah"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1026152061623-v44dsvgrqega5cdpoioose8pka72r15s.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBSL8zf2F846TyhXvIiP3mN1MkAaG5I0gM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1026152061623-v44dsvgrqega5cdpoioose8pka72r15s.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
