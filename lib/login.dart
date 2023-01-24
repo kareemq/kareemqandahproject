@@ -50,7 +50,9 @@ class _LoginPageState extends State<LoginPage> {
           ),
         ],
       ),
-      body: Container(
+      body:
+      Container(
+
         height: MediaQuery.of(context).size.height,
         width: double.infinity,
         child: Column(
@@ -81,17 +83,17 @@ class _LoginPageState extends State<LoginPage> {
                             margin: EdgeInsets.symmetric(horizontal: 50),child: Column(
                             children: [
                               Padding(padding: const EdgeInsets.all(5.0)),
-                              Material(elevation: 30,shadowColor: Colors.black.withOpacity(1),
+                              Material(                                         // elevation removed
                               child: TextField(
-                                decoration: InputDecoration(hintText: 'Email',fillColor: Colors.white ,
+                                decoration: InputDecoration(hintText: 'Email : ',fillColor: Colors.white ,
                                 border: InputBorder.none,
                                 ),
                                 onChanged: (value){
                                   email = value;
                                 },),),
                               Padding(padding: const EdgeInsets.all(2.0)),
-                              Material(elevation: 30,shadowColor: Colors.black.withOpacity(1),
-                              child: TextField(decoration: InputDecoration(hintText: 'Password',fillColor: Colors.white,
+                              Material(                                         //elavation removed
+                              child: TextField(decoration: InputDecoration(hintText: 'Password :',fillColor: Colors.white,
                               border: InputBorder.none,
                               ),
                               autocorrect: false,
@@ -110,12 +112,12 @@ class _LoginPageState extends State<LoginPage> {
                   ],
                 ),
                 Padding(padding:
-                EdgeInsets.symmetric(horizontal: 40),
+                EdgeInsets.symmetric(horizontal: 50),
                   child: Container(
-                    padding: EdgeInsets.only(top: 3, left: 3),
+                    padding: EdgeInsets.only(top: 0, left: 0), // login spaces
                     decoration:
                     BoxDecoration(
-                        borderRadius: BorderRadius.circular(50),
+                        borderRadius: BorderRadius.circular(30),
                         border: Border(
                           bottom: BorderSide(color: Colors.black),
                           top: BorderSide(color: Colors.black),
@@ -138,7 +140,7 @@ class _LoginPageState extends State<LoginPage> {
                           if (newUser != null) {
 
                             Navigator.of(context).push(MaterialPageRoute(
-                              builder: (context) => const Home(Home: Home),
+                              builder: (context) => const important(important: important),
                             ),);
                           }
                         } catch (e) {
@@ -148,7 +150,7 @@ class _LoginPageState extends State<LoginPage> {
                       color: Color(0xff0095FF),
                       elevation: 0,
                       shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(50),
+                        borderRadius: BorderRadius.circular(30),
 
                       ),
                       child: Text(
@@ -180,17 +182,6 @@ class _LoginPageState extends State<LoginPage> {
                   ],
                 ),
 
-                Container(
-                  padding: EdgeInsets.only(top: 100),
-                  height: 200,
-                  decoration: BoxDecoration(
-                    image: DecorationImage(
-                        image: AssetImage("assets/loginlogo.jpg"),
-                        fit: BoxFit.fitHeight
-                    ),
-
-                  ),
-                )
 
               ],
             ))

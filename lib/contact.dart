@@ -11,11 +11,8 @@ class Hcontact extends StatelessWidget {                //CONTACT US
         backgroundColor: Colors.white,
         appBar: AppBar(
           leading: Icon(Icons.arrow_back),
-          title: Text('Contact us!',style: TextStyle(fontSize: 30),),
-          backgroundColor: Colors.cyan,
-          actions: [
-            Icon(Icons.help_center),
-          ],
+          title: Text('Contact Us!',style: TextStyle(fontSize: 25),),
+          backgroundColor: Colors.blue,
 
         ),
         body:

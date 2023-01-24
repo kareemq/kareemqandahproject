@@ -84,8 +84,8 @@ class _SignupPageState extends State<SignupPage> {
                           margin: EdgeInsets.symmetric(horizontal: 50),child: Column(
                           children: [
                             Padding(padding: const EdgeInsets.all(2.0)),
-                            Material(elevation: 30,shadowColor: Colors.black.withOpacity(1),
-                              child: TextField(decoration: InputDecoration(hintText: 'FullName',fillColor: Colors.white,
+                            Material(
+                              child: TextField(decoration: InputDecoration(hintText: 'FullName :',fillColor: Colors.white,
                                 border: InputBorder.none,
                               ),
                                 autocorrect: false,
@@ -95,17 +95,17 @@ class _SignupPageState extends State<SignupPage> {
                                 },
                               ),),
                             Padding(padding: const EdgeInsets.all(5.0)),
-                            Material(elevation: 30,shadowColor: Colors.black.withOpacity(1),
+                            Material(
                               child: TextField(
-                                decoration: InputDecoration(hintText: 'Email',fillColor: Colors.white ,
+                                decoration: InputDecoration(hintText: 'Email :',fillColor: Colors.white ,
                                   border: InputBorder.none,
                                 ),
                                 onChanged: (value){
                                   email = value;
                                 },),),
                             Padding(padding: const EdgeInsets.all(2.0)),
-                            Material(elevation: 30,shadowColor: Colors.black.withOpacity(1),
-                              child: TextField(decoration: InputDecoration(hintText: 'Password',fillColor: Colors.white,
+                            Material(
+                              child: TextField(decoration: InputDecoration(hintText: 'Password :',fillColor: Colors.white,
                                 border: InputBorder.none,
                               ),
                                 autocorrect: false,
@@ -124,7 +124,7 @@ class _SignupPageState extends State<SignupPage> {
                 ],
               ),
               Container(
-                padding: EdgeInsets.only(top: 3, left: 3),
+                padding: EdgeInsets.only(top: 0, left: 0),
                 decoration:
                 BoxDecoration(
                     borderRadius: BorderRadius.circular(50),
